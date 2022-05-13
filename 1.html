@@ -3,14 +3,60 @@
 <head>
   <title>WEB1 - MIFUNE TOSHIRO</title>
   <meta charset="utf-8">
+  <style>
+  body{margin:0;
+
+  }
+  a{color:black;
+    text-decoration:none;
+  }
+  h1{font-size:60px;
+     text-align:center;
+     border-bottom:1px solid black;
+     margin:0;
+     padding:20px;
+   }
+  #grid ol{
+     border-right:1px solid black;
+     width:200px;
+     margin:0;
+     padding:20px;
+     padding-right:2px;
+
+   }
+   #grid {
+     display:grid;
+     grid-template-columns:150px 1fr;
+
+   }
+   #article{
+     padding-left:90px;
+   }
+   @media(max-width:800px){
+     #grid{
+       display:block;
+     }
+     #grid ol{
+       border-right:none;
+     }
+     h1{
+       border-bottom:none;
+     }
+     #article{
+       padding-left:0;
+     }
+   }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">ACTORS</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">MIFUNE TOSHIRO</a></li>
     <li><a href="2.html">MARLON BRANDO</a></li>
     <li><a href="3.html">AL PACINO</a></li>
   </ol>
+  <div id="article">
   <h2>MIFUNE TOSHIRO</h2>
   <p>
     <iframe width="855" height="481" src="https://www.youtube.com/embed/cQNgaeSt4AE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -21,6 +67,7 @@
   <img src="mifune toshiro.jpeg" width="100%">
   </p><p>Toshiro Mifune was born on April 1, 1920 in Seitō, Japanese-occupied Shandong (present-day Qingdao, China), the eldest son of Tokuzo and Sen Mifune.
   </p>
+  </div>
   <p>
 
 

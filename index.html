@@ -3,15 +3,62 @@
 <head>
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  h1{
+    font-size: 60px;
+    text-align: center;
+    border-bottom:1px solid black;
+    margin:0;
+    padding:20px;
+  }
+  #grid ol{
+    margin:0;
+    border-right:1px solid black;
+    width:200px;
+    padding:20px;
+    padding-right:2px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #article{
+    padding-left:90px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    #article{
+      padding-left:0;
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+  }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">ACTORS</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">MIFUNE TOSHIRO</a></li>
     <li><a href="2.html">MARLON BRANDO</a></li>
     <li><a href="3.html">AL PACINO</a></li>
   </ol>
+  <div id="article">
   <h2>OLD ACTOR</h2>
+  </div>
   <p>
 
 

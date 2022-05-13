@@ -3,19 +3,66 @@
 <head>
   <title>WEB1 - AL PACINO</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+  a{
+    color:black;
+    text-decoration:none;
+  }
+  h1{
+    font-size:60px;
+    text-align:center;
+    border-bottom:1px solid black;
+    margin:0;
+    padding:20px;
+  }
+  #grid ol{
+    border-right:1px solid black;
+    width:200px;
+    padding:20px;
+    padding-right:2px;
+    margin:0;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #article{
+    padding-left:90px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    #article{
+      padding-left:0;
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+  }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">ACTORS</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">MIFUNE TOSHIRO</a></li>
     <li><a href="2.html">MARLON BRANDO</a></li>
     <li><a href="3.html">AL PACINO</a></li>
   </ol>
+  <div id="article">
   <h2>AL PACINO</h2>
   <p>Alfredo James Pacino (/pəˈtʃiːnoʊ/; Italian: [paˈtʃiːno]; born April 25, 1940) is an American actor and filmmaker. Throughout his career spanning over five decades, he has received numerous accolades, including an Academy Award, two Tony Awards, and two Primetime Emmy Awards, making him one of the few performers to have achieved the <strong>Triple Crown of Acting</strong>. He has also been honored with the AFI Life Achievement Award, the Cecil B. DeMille Award, and the National Medal of Arts.
   <img src="alpacino.webp" width="100%">
   </p><p>Alfredo James Pacino was born in the East Harlem neighborhood of Upper Manhattan, New York City, on April 25, 1940. He is the son of Italian-American parents Rose Gerardi and Salvatore Pacino.
   </p>
+  </div>
   <p>
 
 
